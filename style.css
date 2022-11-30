@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing:border-box;
+}
+/* ***************************************** */
+/* banner */
+.banner { 
+
+    height: 100vh;
+   background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(background.jpg);
+
+   background-size: cover;
+ 
+
+}
+.navbar {
+    width: 100%;
+    margin: auto;
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    opacity: 85%;
+    
+  
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+.navbar ul li {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: #999;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+/* ***************************************** */
+/* css pseudo-classes */
+.navbar ul li:hover:after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;  
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto ;
+    font-weight: 100;
+    line-height: 25px;
+    padding: 32px;
+}
+/* ***************************************** */
+/* discover our story */
+.row{
+    display: flex;
+    width: 100%;
+    background: #999;
+    overflow: hidden;
+    justify-content: left;
+    padding-left: 6%;
+    padding-right: 4%;
+
+}
+.col1, .col2{
+    flex-basis: 50%;
+    overflow: hidden;
+}
+.col2 img{
+    width: 100%;
+
+}
+.col1 h1{ 
+    padding: 250px 0 0 0;
+    position: relative;
+    justify-self: center;
+    font-size: 100px;
+}
+.col1 p{
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 1px;
+    padding: 0 0 0 0;
+}
+#col1{
+    color:#777;
+    line-height: 22px;
+    margin: 15px 0 30px;
+    
+}
+.second-ul{
+    position: absolute;
+    bottom: 30px;
+}
+.btn{
+    list-style: none;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: #bfbfbf;
+    border-radius:  50%;
+    margin-right: 15px;
+    cursor: pointer;
+
+}
+/* ***************************************** */
+/* layer 1 */
+/* ***************************************** */
+/* burger styles */
+.split {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+section {
+    height: 100vh;
+}
+
+.header {
+    padding: 250px;
+    text-align: center;
+    font-size: 300%;
+    color: #fff;
+    justify-content: center;
+}
+
+#home {
+    background-color: #D0D8D9;
+
+}
+#home-image {
+    border-radius: 10px;
+    background-image: url(burger.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+#home-content {
+    padding: 20px;
+    text-align: right;
+    font-size: 125%;
+}
+.split-left {
+    flex: 50%;
+    box-sizing: border-box;
+}
+.split-right {
+    flex: 50%;
+    box-sizing: border-box;
+}
+/* ***************************************** */
+/* meat styles */
+#about {
+    background-color: #011826;
+}
+#about-image {
+    border-radius: 10px;
+    background-image: url(meat.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+#about-content {
+    padding: 20px;
+    text-align: left;
+    font-size: 135%;
+    color: #fff;
+}
+/* ***************************************** */
+/* pasta styles */
+#pasta {
+    background-color: #D0D8D9;
+}
+#pasta-image {
+    border-radius: 10px;
+    background-image: url(pasta.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+#pasta-content {
+    padding: 20px;
+    text-align: right;
+    font-size: 135%;
+}
+/* ***************************************** */
+/* layer 2 */
+/* ***************************************** */
+/* Drink */
+.card{
+    width: 330px;
+    height: 370px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+
+}
+.card1{
+    background-image: url(pink.jpg);
+}
+.card2{
+    background-image: url(white.jpg);
+}
+.card3{
+    background-image: url(orange.jpg);
+}.card4{
+    background-image: url(yellow.jpg);
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+.card h3{
+    color:#fff;
+    text-shadow: 0 0 5px #999;
+}
+.card p{
+    text-shadow: 0 0 15px #000;
+    font-size: 10px;
+    color:#fff;
+
+}
+/* ***************************************** */
+/* Contact us */
+.container{
+    margin: auto;
+    font-weight: 400px;
+    color: #000;
+    line-height: 2.5;
+    font-size: 20px;
+    justify-content: center;
+    padding: 50px 30px 50px;
+}
+/* ***************************************** */
+/* footer styles */
+footer {
+    text-align: center;
+    padding: 20px 0 20px 0;
+    color: grey;
+    background-color: black;
+}
+
